@@ -1,0 +1,32 @@
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../Assets/Homescreen.png");
+    background-size: cover;
+  }
+  
+  
+  .app-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+  }
+  
+  .chat-toggle-button {
+    background-color: rgb(255, 32, 32);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .chat-toggle-button span {
+    display: block;
+  }
+  

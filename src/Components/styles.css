@@ -1,0 +1,212 @@
+/* styles.css */
+
+.chat-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb {
+    background-color: #212529; 
+    border-radius: 10px;
+  }
+  
+  .chat-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    transition: height 0.3s ease;
+  }
+  
+/* styles.css */
+
+.chat-container {
+    max-height: 300px; /* Set a fixed max height for the chat container */
+    min-height: 100px;
+    max-width: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex: 1;
+    font-family: 'Istok Web', sans-serif;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    border: 1px solid #ccc;
+    background-image: url('../Assets/chatbckground.png');
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rest of the styles remain unchanged */
+  /* styles.css */
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #024082;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 1em; /* Adjust the font size as needed */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 15px;
+  }
+  
+  .menu-button{     
+      font-size: 1em; /* Adjust the font size as needed */
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: color 0.3s ease; 
+  }
+  .close-button {
+    font-size: 0.8em; /* Adjust the font size as needed */
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: color 0.3s ease; 
+
+  }
+
+  .menu-button:hover,
+  .close-button:hover {
+    color: #1abc9c; /* Change the color on hover to a different color if desired */
+  }
+
+  
+  .message-bubble {
+    max-width: 70%;
+    min-width: 5%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: small;
+    word-wrap: break-word;
+    font-family: 'Istok Web', sans-serif;
+    position: relative; /* Position relative for absolute positioning of timestamp */
+  }
+
+
+  .maximize-button {
+    background: none;
+    border: none;
+    font-size:23px; /* Adjust the font size as needed */
+    color: white; /* Change the color to your preferred color */
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease; 
+  }
+  .minimized {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .minimize-button {
+    background: none;
+    border: none;
+    font-size: 21px; /* Adjust the font size as needed */
+    color: white; /* Change the color to your preferred color */
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease; 
+  }
+
+  .minimize-button:hover,
+  .maximize-button:hover {
+  color: #1abc9c; /* Change the color on hover to a different color if desired */
+}
+  
+  .timestamp {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    font-size: x-small;
+    color: #777;
+    
+  }
+
+  .message-bubble.user {
+    align-self: flex-end;
+    background-color: #d8f7bf;
+    color: #000000;
+    text-align: right;
+    border: 1px solid #ccc;
+
+  }
+  
+  .message-bubble.backend {
+    align-self: flex-start;
+    background-color:white;
+    color: black;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: (255, 255, 255, 0.7)
+  }
+  
+  .input-wrapper {
+    display: flex;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    width: max-content;
+    border: 1px solid #ccc;
+    border-radius: 25px 25px 25px 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+.input-field:focus {
+  border-color: #1890ff; /* Change the border color when focused */
+}
+
+.input-wrapper button {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #212529;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition for a smoother effect */
+}
+
+
+.input-wrapper button:hover {
+  background-color: #fcfbfb; /* Change the background color on hover */
+}
+
+.send-button {
+    padding: 2px;
+    background-color: #e8ebee;
+    border: 1px solid #e7ebf0;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  
